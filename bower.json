@@ -1,0 +1,10 @@
+{
+  "name": "dev.workflow",
+  "description": "BEMIT Workflow",
+  "main": "gulpfile.js",
+  "authors": [
+    "zgabievi <zura.gabievi@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true
+}
