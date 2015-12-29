@@ -6,5 +6,8 @@
     "zgabievi <zura.gabievi@gmail.com>"
   ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bem": "~2.0.0"
+  }
 }

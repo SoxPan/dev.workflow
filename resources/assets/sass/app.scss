@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// Variables.
+@import "settings/all";
+
+// Functions, mixins etc.
+@import "tools/all";
+
+// Low-specificity, far-reaching rule-sets.
+@import "generic/all";
+
+// Un-classed HTML elements.
+@import "elements/all";
+
+// Design-free objects, abstractions and patterns.
+@import "objects/all";
+
+// Components and widgets.
+@import "components/all";
+
+// Scoped components.
+@import "scope/all";
+
+// Themed UI components.
+@import "themes/all";
+
+// Helper classes and overrides.
+@import "trumps/all";

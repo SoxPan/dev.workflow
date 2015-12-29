@@ -18,7 +18,12 @@ gulp.task('sass', function () {
 	gulp.src('./resources/assets/sass/**/*.scss')
 		.pipe(Production ? gutil.noop() : sourcemaps.init())
 
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass({
+			includePaths: [
+				'./resources/assets/sass',
+				'./bower_components'
+			]
+		}).on('error', sass.logError))
 		.pipe(autoprefixer())
 
 		.pipe(Production ? gutil.noop() : sourcemaps.write())
