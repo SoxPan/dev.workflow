@@ -22,7 +22,10 @@
 @import "scope/all";
 
 // Themed UI components.
-@import "themes/all";
+@import "theme/all";
 
 // Helper classes and overrides.
 @import "trumps/all";
+
+// Code that makes you ashamed
+@import "shame";

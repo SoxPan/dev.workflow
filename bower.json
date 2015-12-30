@@ -8,6 +8,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bem": "~2.0.0"
+    "bem": "~2.1.1"
   }
 }

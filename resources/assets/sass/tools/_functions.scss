@@ -1,0 +1,23 @@
+// Remove the unit of a length
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
+}
+
+// calculate rem from px
+@function rem($size) {
+	@return #{strip-unit(0.125 * $size)}rem;
+}
+
+// black opacity
+@function black($opacity) {
+	@return rgba(black, $opacity);
+}
+
+// white opacity
+@function white($opacity) {
+	@return rgba(white, $opacity);
+}
