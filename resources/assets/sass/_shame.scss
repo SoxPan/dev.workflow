@@ -1,0 +1,51 @@
+@include b('block') {
+	display: block;
+
+	@include e('element1') {
+		display: element1;
+
+		@include m('modifier1') {
+			display: modifier1;
+		}
+
+		@include is('state') {
+			display: is-state;
+		}
+
+		@include has('state') {
+			display: has-state;
+		}
+
+		@include js('state') {
+			display: js-state;
+		}
+	}
+
+	@include m('modifier2') {
+		display: modifier2;
+
+		@include while('modifier1') {
+			display: modifier2-1;
+		}
+	}
+
+	@include e('element2') {
+		display: element2;
+
+		@include duo {
+			display: element2-2;
+		}
+
+		@include with('element1') {
+			display: element2-1;
+		}
+
+		@include at('modifier2') {
+			display: modifier2;
+		}
+	}
+}
+
+.test {
+	@include rem(font-size, 16px);
+}
