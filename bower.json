@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bem": "~2.0.0"
+    "sass-config": "*",
+    "sass-bem": "~2.2.0"
   }
 }
