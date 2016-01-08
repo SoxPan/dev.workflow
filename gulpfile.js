@@ -53,14 +53,14 @@ gulp.task('html', function () {
 });
 
 // watch sass files
-gulp.task('watch:sass', function () {
+gulp.task('watch:sass', ['sass'], function () {
 	gulp.watch('./resources/assets/sass/**/*.scss', ['sass']);
 });
 
 // watch html files
-gulp.task('watch:html', function () {
+gulp.task('watch:html', ['html'], function () {
 	gulp.watch('./resources/views/**/*.html', ['html']);
 });
 
 // default gulp
-gulp.task('default', ['html:watch', 'sass:watch']);
+gulp.task('default', ['watch:html', 'watch:sass']);
