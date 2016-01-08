@@ -7,6 +7,7 @@ var cssmin = require('gulp-cssmin');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var notify = require('gulp-notify');
+var critical = require('critical').stream;
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
@@ -23,10 +24,10 @@ gulp.task('sass', function () {
 	gulp.src('./resources/assets/sass/**/*.scss')
 		.pipe(Production ? gutil.noop() : sourcemaps.init())
 
-		.pipe(sass({includePaths: paths}).on('error', sass.logError))
+		.pipe(sass({includePaths: paths, sourceComments: true}).on('error', sass.logError))
 		.pipe(autoprefixer())
 
-		.pipe(Production ? gutil.noop() : sourcemaps.write())
+		.pipe(Production ? gutil.noop() : sourcemaps.write('./'))
 
 		.pipe(Production ? concat('app.css') : gutil.noop())
 		.pipe(Production ? cssmin() : gutil.noop())
