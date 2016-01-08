@@ -15,15 +15,15 @@ var Production = gutil.env.production === true;
 
 // work on sass files
 gulp.task('sass', function () {
+	var paths = [
+		'./resources/assets/sass',
+		'./bower_components'
+	];
+
 	gulp.src('./resources/assets/sass/**/*.scss')
 		.pipe(Production ? gutil.noop() : sourcemaps.init())
 
-		.pipe(sass({
-			includePaths: [
-				'./resources/assets/sass',
-				'./bower_components'
-			]
-		}).on('error', sass.logError))
+		.pipe(sass({includePaths: paths}).on('error', sass.logError))
 		.pipe(autoprefixer())
 
 		.pipe(Production ? gutil.noop() : sourcemaps.write())
