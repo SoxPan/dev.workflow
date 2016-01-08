@@ -7,7 +7,6 @@ var cssmin = require('gulp-cssmin');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var notify = require('gulp-notify');
-var critical = require('critical').stream;
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
