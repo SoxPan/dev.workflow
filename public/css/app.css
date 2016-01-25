@@ -1,13 +1,17 @@
 @charset "UTF-8";
+
 /**
  * Return config value
  */
+
 /**
  * Set config options
  */
+
 /**
  * Format: .block[<element>|<modifier>] {}
  */
+
 /**
  * Signify that something is an Object, and that it may 
  * be used in any number of unrelated contexts to the one 
@@ -18,6 +22,7 @@
  *
  * Format: .o-object[<element>|<modifier>] {}
  */
+
 /**
  * Signify that something is a Component. This 
  * is a concrete, implementation-specific piece 
@@ -29,6 +34,7 @@
  *
  * Format: .c-component[<element>|<modifier>] {}
  */
+
 /**
  * Signify that this class is a Utility class. 
  * It has a very specific role (often providing 
@@ -40,6 +46,7 @@
  *
  * Format: .u-utility {}
  */
+
 /**
  * Signify that a class is responsible for adding a 
  * Theme to a view. It lets us know that UI Components’ 
@@ -48,6 +55,7 @@
  *
  * Format: .t-theme {}
  */
+
 /**
  * Signify that a class is responsible for adding a 
  * Theme to a view. It lets us know that UI Components’ 
@@ -56,6 +64,7 @@
  *
  * Format: .s-scope {}
  */
+
 /**
  * Signify that the piece of UI in question 
  * is currently styled a certain way because 
@@ -75,6 +84,7 @@
  *
  * Format: .[is|has|js]-state {}
  */
+
 /**
  * Signify that this class is the worst of 
  * the worst—a hack! Sometimes, although 
@@ -87,6 +97,7 @@
  *
  * Format: ._<namespace>hack {}
  */
+
 /**
  * Signify that a QA or Test Engineering team 
  * is running an automated UI test which needs 
@@ -97,74 +108,57 @@
  *
  * Format: .qa-node {}
  */
+
 /**
  * In this method we’ll use before and after pseudo
  * classes fix the issue. Following is the code.
  */
+
 /**
  * This mixin by Jason Zimdars is a breeze to use and
  * offers a greater visual experience to those that
  * are lucky enough to have a retina device.
  */
+
 /**
  * Always a handy mixin. Set every border radius or just a
  * single side without worrying about all those prefixes.
  */
+
 /**
  * An easy way to truncate text with an ellipsis.
  * Requires the element to be block or inline-block.
  */
+
 /**
  * Pass in the desired location of your target element
  * to produce all the necessary positioning code.
  */
+
 /**
  * This mixin sets the property in rem's with a px fallback.
  */
+
 /**
  * Hiding Text and Image Replacement
  */
-/* line 14, c:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_object.scss */
-.o-object {
-  outline: 5px solid #9bcb3c;
-  display: object; }
 
-/* line 15, c:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_component.scss */
-.c-component {
-  outline: 5px solid #00b8a9;
-  display: component; }
+/* line 14, C:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_object.scss */
 
-/* line 12, c:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_scope.scss */
-.s-scope {
-  outline: 5px solid #a2453d;
-  display: scope; }
+/* line 15, C:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_component.scss */
 
-/* line 12, c:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_theme.scss */
-.t-theme {
-  outline: 5px solid #60316e;
-  display: theme; }
+/* line 12, C:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_scope.scss */
 
-/* line 15, c:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_utility.scss */
-.u-utility {
-  outline: 5px solid #635270;
-  display: utility; }
+/* line 12, C:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_theme.scss */
 
-/* line 22, c:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_hack.scss */
-._hack {
-  outline: 5px solid #f33535;
-  display: hack; }
+/* line 15, C:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_utility.scss */
 
-/* line 14, c:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_test.scss */
-.qa-test {
-  outline: 5px solid #f8e796;
-  display: test; }
+/* line 22, C:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_hack.scss */
 
-/* line 1, c:/Users/zgabievi/Desktop/dev.workflow/resources/assets/sass/_shame.scss */
-.test {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 5px; }
+/* line 14, C:/Users/zgabievi/Desktop/dev.workflow/bower_components/sass-bem/mixins/_test.scss */
+
+/* line 1, C:/Users/zgabievi/Desktop/dev.workflow/resources/assets/sass/_shame.scss */
+
+/*# sourceMappingURL=app.css.map */
 
 /*# sourceMappingURL=app.css.map */

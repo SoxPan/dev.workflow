@@ -6,6 +6,7 @@
   "author": "zgabievi <zura.gabievi@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "critical": "^0.7.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
@@ -19,5 +20,9 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
     "gulp-x-includer": "^0.1.2"
+  },
+  "devDependencies": {
+    "gulp-cssnano": "^2.1.0",
+    "gulp-uncss": "^1.0.4"
   }
 }
