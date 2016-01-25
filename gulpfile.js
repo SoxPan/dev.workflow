@@ -31,8 +31,6 @@ gulp.task('sass', function () {
 		.pipe(autoprefixer())
 		.pipe(Production ? gutil.noop() : sourcemaps.write('./'))
 
-		.pipe(Production ? gutil.noop() : sourcemaps.write('./'))
-
 		.pipe(Production ? concat('app.css') : gutil.noop())
 		.pipe(Production ? cssnano() : gutil.noop())
 		.pipe(Production ? rename({suffix: '.min'}) : gutil.noop())
