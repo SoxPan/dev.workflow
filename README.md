@@ -9,4 +9,6 @@ BEMIT Workflow &amp; Gulpjs
 - `gulp optimize`
 - `gulp critical`
 - `gulp publish`
-- `gulp --production`
+
+# Flags
+- `--production`
